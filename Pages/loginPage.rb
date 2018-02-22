@@ -10,11 +10,11 @@ class LoginPage
 
   def login(condition)
     if condition == 'valid'
-      @loginPage.text_field(:id => 'username').set "Username"
-      @loginPage.text_field(:id => 'password').set "Password"
+      @loginPage.text_field(:id => 'username').set "Username" #Replace with credentials
+      @loginPage.text_field(:id => 'password').set "Password" #TODO utilize json file
     elsif condition == 'invalid'
-      @loginPage.div.text_field(:id => 'username').set "usr"
-      @loginPage.div.text_field(:id => 'password').set "1111111"
+      @loginPage.div.text_field(:id => 'username').set "FakeUsername"
+      @loginPage.div.text_field(:id => 'password').set "NotRealPassword"
     end
     @loginPage.element(:id => "SubmitCreds").click
   end

@@ -1,6 +1,6 @@
 Feature: SNHU Website has a login feature
 
-  A student or faculty member would like to SNHU news, courses, Blackboard etc.
+  A student or faculty member would like to see SNHU news, courses, Blackboard etc.
   Provided they have a valid username and password, they will be logged into mySNHU.
 
   Background:
